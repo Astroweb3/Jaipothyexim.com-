@@ -1,78 +1,189 @@
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-        <div class="container" data-aos="fade-up">
-  
-          <div class="section-header">
-            <h2>Contact</h2>
-            <p>Nulla dolorum nulla nesciunt rerum facere sed ut inventore quam porro nihil id ratione ea sunt quis dolorem dolore earum</p>
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JAIPOTHYEXIM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>JAIPOTHYEXIM<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'aboutus' %}">About us</a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
+              <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
+              <li><a href="{% url 'spa' %}">SPA Products</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Vegitables</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+       
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+  <section id="contact" class="contact">
+    <div class="container" data-aos="fade-up">
+
+      <div class="section-header">
+        <h2>Contact</h2>
+      </div>
+     
+      <div class="row gx-lg-0 gy-3">
+
+        <div class="col-lg-4">
+
+          <div class="info-container d-flex flex-column align-items-center justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1394.005130632421!2d78.15088373325666!3d8.80091774489097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b03efa1f4c52847%3A0x2a97d5d0eb36f4f2!2sAHLAN%20MARITIME%20LLP!5e0!3m2!1sen!2sin!4v1685358264378!5m2!1sen!2sin" width="360" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-  
-          <div class="row gx-lg-0 gy-4">
-  
-            <div class="col-lg-4">
-  
-              <div class="info-container d-flex flex-column align-items-center justify-content-center">
-                <div class="info-item d-flex">
-                  <i class="bi bi-geo-alt flex-shrink-0"></i>
-                  <div>
-                    <h4>Location:</h4>
-                    <p>A108 Adam Street, New York, NY 535022</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-envelope flex-shrink-0"></i>
-                  <div>
-                    <h4>Email:</h4>
-                    <p>info@example.com</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-phone flex-shrink-0"></i>
-                  <div>
-                    <h4>Call:</h4>
-                    <p>+1 5589 55488 55</p>
-                  </div>
-                </div><!-- End Info Item -->
-  
-                <div class="info-item d-flex">
-                  <i class="bi bi-clock flex-shrink-0"></i>
-                  <div>
-                    <h4>Open Hours:</h4>
-                    <p>Mon-Sat: 11AM - 23PM</p>
-                  </div>
-                </div><!-- End Info Item -->
-              </div>
-  
-            </div>
-  
-            <div class="col-lg-8">
-              <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-                <div class="row">
-                  <div class="col-md-6 form-group">
-                    <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-                  </div>
-                  <div class="col-md-6 form-group mt-3 mt-md-0">
-                    <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                  </div>
-                </div>
-                <div class="form-group mt-3">
-                  <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                </div>
-                <div class="form-group mt-3">
-                  <textarea class="form-control" name="message" rows="7" placeholder="Message" required></textarea>
-                </div>
-                <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
-                <div class="text-center"><button type="submit">Send Message</button></div>
-              </form>
-            </div><!-- End Contact Form -->
-  
-          </div>
-  
+
         </div>
-      </section><!-- End Contact Section -->
+        <div class="col-lg-8">
+          <form action="{% url 'send_email' %}" method="post" role="form" class="php-email-form">
+            {% csrf_token %}
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <input type="text" name="name1" class="form-control" id="name1" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email_id1" id="email_id1" placeholder="Your Email" required>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <input type="text" class="form-control" name="subject_1" id="subject_1" placeholder="Subject" required>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="msg" rows="7" id = "msg" placeholder="Message" required></textarea>
+            </div>
+            
+              <div class="loading"></div>
+              <div class="error-message"></div>
+              <div class="sent-message"></div>
+
+            <div class="text-center"><button type="submit">Send Message</button></div>
+            
+          </form>
+        </div><!-- End Contact Form -->
+
+      </div>
+
+    </div>
+  </section><!-- End Contact Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>JAIPOTHYEXIM</span>
+          </a>
+          <p>Innovative solutions for every room in your home and beyond.</p>
+       
+        </div>
+       
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Head Office:</strong><br>
+            No:18 Surya Avenue Main Road <br>
+            Kurunji Nagar <br>
+            Thoothukudi-628002 <br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+
+        </div>
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <p>
+            <strong>Branch Office:</strong><br>
+            39/3 Kasi Thangam Complex <br>
+            Santhai Road <br>
+            Thoothukudi-628002 <br><br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+          
+        </div>
+
+      </div>
+    </div>
+
+  
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>

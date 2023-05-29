@@ -26,7 +26,8 @@
   <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
   <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
-
+  <link href="https://fonts.cdnfonts.com/css/arkhip" rel="stylesheet">
+                
   <!-- Template Main CSS File -->
   <link href="{% static 'css/main.css'%}" rel="stylesheet">
 
@@ -56,11 +57,16 @@
         <ul>
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'aboutus' %}">About us</a></li>
-          <li><a href="#services">Products</a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
+              <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
+              <li><a href="{% url 'spa' %}">SPA Products</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Grocery</a></li>
+            </ul>
+          </li>
           <li><a href="#contact">Contact</a></li>
-          <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
         </ul>
        
       </nav><!-- .navbar -->
@@ -72,95 +78,206 @@
   </header><!-- End Header -->
   <!-- End Header -->
 <!-- ======= Portfolio Details Section ======= -->
-<section id="portfolio-details" class="portfolio-details">
-    <div class="container" data-aos="fade-up">
+ <!-- ======= Portfolio Section ======= -->
+ <section id="portfolio" class="portfolio sections-bg">
+  <div class="container" data-aos="fade-up">
 
-      <div class="section-header">
-        <h2>Kitchen Product</h2>
-        <p>Better tools better Kitchen</p>
-      </div>
+    <div class="section-header">
+      <h2>Kitchen Products</h2>
+      <p>Better tools better Kitchen</p>
+    </div>
 
-      <div class="row">
-        <div class="column">
-          <img src="{% static 'img/k1.png'%}" alt="Snow">
-          <div class="destination_title"><a href="#">Cookware set </a></div>
-        </div>
-        
-        <div class="column">
-          <img src="{% static 'img/k2.jpg'%}" alt="Forest" >
-          <div class="destination_title"><a href="#">Spatula  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k3.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Dining set  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k4.jpg'%}" alt="Mountains"   >
+    <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-          <div class="destination_title"><a href="#">Camshelf  </a></div>
-        </div>
-        
-        <div class="column">
-          <img src="{% static 'img/k5.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Bowl set  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k6.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Manual Blenders  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k7.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Plates  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k8.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Serving Spoons</a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k9.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Copper Thaali set </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k10.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Copper Cookware Sets  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k11.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Terracotta Cookwares  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k12.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Terracotta Glasses  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k13.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Terracotta Kadai  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k14.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Wooden Bowl Sets </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k15.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Electric Blenders </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k16.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Microwave Oven  </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k17.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">OTG </a></div>
-        </div>
-        <div class="column">
-          <img src="{% static 'img/k18.jpg'%}" alt="Mountains"   >
-          <div class="destination_title"><a href="#">Cup And saucer Set </a></div>
-        </div>
-      </div>
+      <div class="row gy-4 portfolio-container">
 
-    
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Cookware set </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spatula</a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Dining set </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Camshelf </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/5.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Bowl set </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/6.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Manual Blenders </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/7.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Plates </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Serving Spoons </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/9.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Copper Thaali set </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/10.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/10.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Copper Cookware Sets </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/11.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Terracotta Cookwares </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/12.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/12.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Terracotta Glasses </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/13.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/13.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Terracotta Kadai </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/14.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/14.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Wooden Bowl Sets </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/15.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/15.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Electric Blenders </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/16.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/16.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Microwave Oven </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/17.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/17.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">OTG </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/18.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/18.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Cup And saucer Set </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item --> 
+
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
   </div>
-</section>
+</section><!-- End Portfolio Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -172,37 +289,29 @@
             <span>JAIPOTHYEXIM</span>
           </a>
           <p>Innovative solutions for every room in your home and beyond.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-       
-
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            21/10 shenoy nagar <br>
-            murugasen street<br>
-            chennai-30 <br><br>
-            <strong>Phone:</strong> 8838463421<br>
-            <strong>Email:</strong> kirankumarr1901@gmail.com<br>
+            <strong>Head Office:</strong><br>
+            No:18 Surya Avenue Main Road <br>
+            Kurunji Nagar <br>
+            Thoothukudi-628002 <br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
           </p>
 
+        </div>
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <p>
+            <strong>Branch Office:</strong><br>
+            39/3 Kasi Thangam Complex <br>
+            Santhai Road <br>
+            Thoothukudi-628002 <br><br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+          
         </div>
 
       </div>
@@ -211,7 +320,6 @@
   
 
   </footer><!-- End Footer -->
-  <!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

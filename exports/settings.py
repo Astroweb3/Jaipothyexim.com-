@@ -122,3 +122,23 @@ STATIC_ROOT = os.path.join(BASE_DIR,'assets')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# settings.py
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'kirankumarr1901@gmail.com'  # Your email address
+EMAIL_HOST_PASSWORD = 'ovuwxxxytmnirxto'  # Your email password
+EMAIL_USE_TLS = True
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+
+# settings.py
+
+ADMINS = [
+    ('kiran', 'kirankumarr1901@gmail.com'),
+]
+
+MANAGERS = ADMINS
+
+EMAIL_SUBJECT_PREFIX = '[Django Mail] '  # Optional prefix for email subjects

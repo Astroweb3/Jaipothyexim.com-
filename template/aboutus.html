@@ -56,11 +56,17 @@
         <ul>
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'aboutus' %}">About us</a></li>
-          <li><a href="#services">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
+              <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
+              <li><a href="{% url 'spa' %}">SPA Products</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Vegitables</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+
         </ul>
        
       </nav><!-- .navbar -->
@@ -172,56 +178,54 @@
 
 </main><!-- End #main -->
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="footer">
 
-    <div class="container">
-      <div class="row gy-4">
-        <div class="col-lg-5 col-md-12 footer-info">
-          <a href="index.html" class="logo d-flex align-items-center">
-            <span>JAIPOTHYEXIM</span>
-          </a>
-          <p>Innovative solutions for every room in your home and beyond.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-5 col-md-12 footer-info">
+            <a href="index.html" class="logo d-flex align-items-center">
+              <span>JAIPOTHYEXIM</span>
+            </a>
+            <p>Innovative solutions for every room in your home and beyond.</p>
+            <div class="social-links d-flex mt-4">
+              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+            </div>
           </div>
-        </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-       
-
-        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-          <h4>Contact Us</h4>
-          <p>
-            21/10 shenoy nagar <br>
-            murugasen street<br>
-            chennai-30 <br><br>
-            <strong>Phone:</strong> 8838463421<br>
-            <strong>Email:</strong> kirankumarr1901@gmail.com<br>
-          </p>
-
-        </div>
-
-      </div>
-    </div>
-
+    
+          <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Head Office:</strong><br>
+              No:18 Surya Avenue Main Road <br>
+              Kurunji Nagar <br>
+              Thoothukudi-628002 <br>
+              <strong>Phone-1:</strong> 9789183098<br>
+              <strong>Phone-2:</strong> 9790010108<br>
+            </p>
   
-
-  </footer><!-- End Footer -->
-  <!-- End Footer -->
+          </div>
+          <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+            <p>
+              <strong>Branch Office:</strong><br>
+              39/3 Kasi Thangam Complex <br>
+              Santhai Road <br>
+              Thoothukudi-628002 <br><br>
+              <strong>Phone-1:</strong> 9789183098<br>
+              <strong>Phone-2:</strong> 9790010108<br>
+            </p>
+            
+          </div>
+  
+        </div>
+      </div>
+  
+    
+  
+    </footer><!-- End Footer -->
 
   <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 

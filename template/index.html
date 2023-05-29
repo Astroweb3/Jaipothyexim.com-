@@ -56,11 +56,17 @@
         <ul>
           <li><a href="{% url 'index' %}">Home</a></li>
           <li><a href="{% url 'aboutus' %}">About us</a></li>
-          <li><a href="#services">Products</a></li>
-          <li><a href="#contact">Contact</a></li>
-          <li><a href="#" class="twitter"><i class="bi bi-twitter"></i></a></li>
-          <li><a href="#" class="facebook"><i class="bi bi-facebook"></i></a></li>
-          <li><a href="#" class="instagram"><i class="bi bi-instagram"></i></a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
+              <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
+              <li><a href="{% url 'spa' %}">SPA Products</a></li>
+              <li><a href="#">Furniture</a></li>
+              <li><a href="#">Grocery</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+    
         </ul>
        
       </nav><!-- .navbar -->
@@ -78,40 +84,52 @@
       <div class="row gy-5" data-aos="fade-in">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center text-center text-lg-start">
           <h2>Welcome to <span>JAIPOTHYEXIM</span></h2>
-          <p>Innovative solutions for every room in your home and beyond.</p>
+          <p><strong>Innovative solutions for every room in your home and beyond.</strong></p>
           <div class="d-flex justify-content-center justify-content-lg-start">
             <a href="{% url 'aboutus' %}" class="btn-get-started">Get Started</a>
             <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
-          <img src="{% static 'img/bgg.png'%}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
+          <img src="{% static 'img/logo.png'%}" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="100">
         </div>
       </div>
     </div>
 
     <div class="icon-boxes position-relative">
-      <div class="container position-relative">
+      <div class="container" data-aos="fade-up">
         <div class="row gy-4 mt-5">
          
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-xl-3 col-md-5" data-aos="fade-up" data-aos-delay="100">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-utensils"></i></div>
               <h4 class="title"><a href="{% url 'kitchen' %}" class="stretched-link">Kitchen Products</a></h4>
             </div>
           </div><!--End Icon Box -->
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-xl-2 col-md-5" data-aos="fade-up" data-aos-delay="200">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-tools"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Engineering Items</a></h4>
+              <h4 class="title"><a href="{% url 'engeneering' %}" class="stretched-link">Engineering Items</a></h4>
             </div>
           </div><!--End Icon Box -->
 
-          <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-xl-2 col-md-5 "data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-spa"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">SPA Products</a></h4>
+              <h4 class="title"><a href="{% url 'spa' %}" class="stretched-link">SPA Products</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+          <div class="col-xl-2 col-md-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-couch"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">Furniture</a></h4>
+            </div>
+          </div><!--End Icon Box -->
+          <div class="col-xl-3 col-md-5" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="fas fa-shopping-cart"></i></div>
+              <h4 class="title"><a href="" class="stretched-link">Grocery</a></h4>
             </div>
           </div><!--End Icon Box -->
 
@@ -121,137 +139,132 @@
 
     </div>
   </section>
-  <!-- End Hero Section -->
+<!-- End Hero Section -->
 
-    <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="testimonials">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio sections-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Testimonials</h2>
-          <p>Voluptatem quibusdam ut ullam perferendis repellat non ut consequuntur est eveniet deleniti fignissimos eos quam</p>
+          <h2>Best Sellers</h2>
+          <p>Transform Your Life, One Space at a Time!</p>
         </div>
 
-        <div class="slides-3 swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
 
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{% static 'img/testimonials/testimonials-1.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{% static 'img/testimonials/testimonials-2.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{% static 'img/testimonials/testimonials-3.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{% static 'img/testimonials/testimonials-4.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>Matt Brandon</h3>
-                      <h4>Freelancer</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-wrap">
-                <div class="testimonial-item">
-                  <div class="d-flex align-items-center">
-                    <img src="{% static 'img/testimonials/testimonials-5.jpg'%}" class="testimonial-img flex-shrink-0" alt="">
-                    <div>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
-                      <div class="stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                    </div>
-                  </div>
-                  <p>
-                    <i class="bi bi-quote quote-icon-left"></i>
-                    Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore.
-                    <i class="bi bi-quote quote-icon-right"></i>
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
+          <div>
+            <ul class="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Kitchen</li>
+              <li data-filter=".filter-product">Engineering</li>
+              <li data-filter=".filter-branding">Spa</li>
+              
+            </ul><!-- End Portfolio Filters -->
           </div>
-          <div class="swiper-pagination"></div>
+
+          <div class="row gy-4 portfolio-container">
+
+            <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/1.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Cookware set </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/eng/e1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e1.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Drilling Machine </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/spa/s11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s11.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Aroma Candles </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/5.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Bowl set </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/eng/e5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e5.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Solar Cycle Light  </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/spa/s7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s7.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Massaging Oils </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/9.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Copper Thaali set </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/eng/e18.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e18.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Wood Planer Machine </a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/spa/s4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s4.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+
+          
+
+          </div><!-- End Portfolio Container -->
+
         </div>
 
       </div>
-    </section><!-- End Testimonials Section -->
-
+    </section><!-- End Portfolio Section -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
@@ -263,43 +276,35 @@
             <span>JAIPOTHYEXIM</span>
           </a>
           <p>Innovative solutions for every room in your home and beyond.</p>
-          <div class="social-links d-flex mt-4">
-            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+          
         </div>
-
-        <div class="col-lg-2 col-6 footer-links">
-          <h4>Useful Links</h4>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Terms of service</a></li>
-            <li><a href="#">Privacy policy</a></li>
-          </ul>
-        </div>
-
-       
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
           <p>
-            21/10 shenoy nagar <br>
-            murugasen street<br>
-            chennai-30 <br><br>
-            <strong>Phone:</strong> 8838463421<br>
-            <strong>Email:</strong> kirankumarr1901@gmail.com<br>
+            <strong>Head Office:</strong><br>
+            No:18 Surya Avenue Main Road <br>
+            Kurunji Nagar <br>
+            Thoothukudi-628002 <br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
           </p>
 
+        </div>
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <p>
+            <strong>Branch Office:</strong><br>
+            39/3 Kasi Thangam Complex <br>
+            Santhai Road <br>
+            Thoothukudi-628002 <br><br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+          
         </div>
 
       </div>
     </div>
-
-  
 
   </footer><!-- End Footer -->
   <!-- End Footer -->
