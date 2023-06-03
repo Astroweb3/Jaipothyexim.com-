@@ -1,0 +1,479 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>JAIPOTHYEXIM</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+ 
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/aos/aos.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/glightbox/css/glightbox.min.css'%}" rel="stylesheet">
+  <link href="{% static 'vendor/swiper/swiper-bundle.min.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'css/main.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Impact
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/impact-bootstrap-business-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+
+
+  <header id="header" class="header d-flex align-items-center">
+
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+      <a href="{% url 'index' %}" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/img/logo.png" alt=""> -->
+        <h1>JAIPOTHYEXIM<span>.</span></h1>
+      </a>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li><a href="{% url 'aboutus' %}">About us</a></li>
+          <li class="dropdown"><a href="#"><span>Product</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
+              <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
+              <li><a href="{% url 'spa' %}">SPA Products</a></li>
+              <li><a href="{% url 'furniture' %}">Furniture</a></li>
+              <li><a href="#">Vegitables</a></li>
+            </ul>
+          </li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
+        </ul>
+       
+      </nav><!-- .navbar -->
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+  <!-- End Header -->
+<!-- ======= Portfolio Section ======= -->
+<section id="portfolio" class="portfolio sections-bg">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-header">
+      <h2>Spa Products</h2>
+      <p>Indulge in Pure Bliss, Nurture Your Inner Glow</p>
+    </div>
+
+    <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+        <div>
+            <ul class="portfolio-flters">
+              <li data-filter="*" class="filter-active">Mattresses</li>
+              <li data-filter=".filter-app">Bath Line</li>
+              <li data-filter=".filter-product">Bed </li>
+              <li data-filter=".filter-branding">F&B </li>
+              <li data-filter=".filter-branding">Soft Furnish</li>
+            </ul><!-- End Portfolio Filters -->
+          </div>
+      <div class="row gy-4 portfolio-container">
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
+              <p>Exquisite and resonant instruments that bring tranquility and harmony to your space.With their rich tones and calming vibrations, they are perfect for meditation, and creating a peaceful atmosphere. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba5.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massage Table  </a></h4>
+              <p>A professional-grade and luxurious platform designed to enhance the massage experience for both therapists and clients.it provides a comfortable and supportive surface for a wide range of bodywork techniques.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba6.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Oil Warmer </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba7.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massaging Oils </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massaging Stones </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
+              <p>Exquisite and resonant instruments that bring tranquility and harmony to your space.With their rich tones and calming vibrations, they are perfect for meditation, and creating a peaceful atmosphere. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be5.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massage Table  </a></h4>
+              <p>A professional-grade and luxurious platform designed to enhance the massage experience for both therapists and clients.it provides a comfortable and supportive surface for a wide range of bodywork techniques.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be6.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Oil Warmer </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be7.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massaging Oils </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massaging Stones </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be9.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Dhara Pot  </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be10.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be10.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massage Equipments</a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be11.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Candles </a></h4>
+              <p>Lorem ipsum, dolor sit amet consectetur</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
+              <p>Exquisite and resonant instruments that bring tranquility and harmony to your space.With their rich tones and calming vibrations, they are perfect for meditation, and creating a peaceful atmosphere. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl5.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massage Table  </a></h4>
+              <p>A professional-grade and luxurious platform designed to enhance the massage experience for both therapists and clients.it provides a comfortable and supportive surface for a wide range of bodywork techniques.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/fb1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/fb2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/fb4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
+              <p>Exquisite and resonant instruments that bring tranquility and harmony to your space.With their rich tones and calming vibrations, they are perfect for meditation, and creating a peaceful atmosphere. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/fb3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+      </div><!-- End Portfolio Container -->
+
+    </div>
+
+  </div>
+</section><!-- End Portfolio Section -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-5 col-md-12 footer-info">
+          <a href="index.html" class="logo d-flex align-items-center">
+            <span>JAIPOTHYEXIM</span>
+          </a>
+          <p>Innovative solutions for every room in your home and beyond.</p>
+       
+        </div>
+       
+        <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Head Office:</strong><br>
+            No:18 Surya Avenue Main Road <br>
+            Kurunji Nagar <br>
+            Thoothukudi-628002 <br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+
+        </div>
+        <div class="col-lg-2 col-md-12 footer-contact text-center text-md-start">
+          <p>
+            <strong>Branch Office:</strong><br>
+            39/3 Kasi Thangam Complex <br>
+            Santhai Road <br>
+            Thoothukudi-628002 <br><br>
+            <strong>Phone-1:</strong> 9789183098<br>
+            <strong>Phone-2:</strong> 9790010108<br>
+          </p>
+          
+        </div>
+
+      </div>
+    </div>
+
+  
+
+  </footer><!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/aos/aos.js'%}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js'%}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter_vanilla.js'%}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js'%}"></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'js/main.js'%}"></script>
+
+</body>
+
+</html>

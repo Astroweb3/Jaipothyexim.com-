@@ -1191,9 +1191,9 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #6c757d;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .portfolio .portfolio-wrap:hover img {

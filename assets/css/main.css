@@ -1191,9 +1191,9 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info p {
   color: #6c757d;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
-  padding-right: 50px;
+  padding-right: 20px;
 }
 
 .portfolio .portfolio-wrap:hover img {
@@ -1720,7 +1720,7 @@ section {
   background-color: var(--color-primary);
   height: 100%;
   padding: 20px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 12px;
   box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
@@ -1799,7 +1799,7 @@ section {
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
-  background: #059652;
+  background: #f85a40;
   text-align: center;
   padding: 15px;
   font-weight: 600;
@@ -1819,7 +1819,7 @@ section {
   width: 24px;
   height: 24px;
   margin: 0 10px -6px 0;
-  border: 3px solid #059652;
+  border: 3px solid #f85a40;
   border-top-color: #fff;
   animation: animate-loading 1s linear infinite;
 }
@@ -1857,7 +1857,7 @@ section {
 }
 
 .contact .php-email-form button[type=submit]:hover {
-  background: rgba(0, 131, 116, 0.8);
+  background: #f85a40;
 }
 
 @keyframes animate-loading {
@@ -1915,7 +1915,7 @@ section {
 }
 
 .hero .btn-get-started:hover {
-  border-color: #c2edce;
+  border-color: #f85a40;
 }
 
 .hero .btn-watch-video {
@@ -1935,7 +1935,7 @@ section {
 }
 
 .hero .btn-watch-video:hover i {
-  color: #c2edce;
+  color: #f85a40;
 }
 
 @media (max-width: 640px) {
@@ -2690,3 +2690,80 @@ section {
   color: #2ee170;
   
 }
+
+
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,400,500);
+.contact4 {
+  font-family: "Montserrat", sans-serif;
+	color: #8d97ad;
+  font-weight: 300;
+}
+
+.contact4 h1, .contact4 h2, .contact4 h3, .contact4 h4, .contact4 h5, .contact4 h6 {
+  color: #3e4555;
+}
+
+.contact4 .font-weight-medium {
+	font-weight: 500;
+}
+
+.contact4 .form-control {
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.contact4 .form-control:focus {
+  border-color: #ffffff;
+}
+
+.contact4 input::-webkit-input-placeholder,
+.contact4 textarea::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input:-ms-input-placeholder,
+.contact4 textarea:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 input::placeholder,
+.contact4 textarea::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.contact4 .right-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.contact4.bg-info {
+    background-color: #188ef4 !important;
+}
+
+.contact4 .text-inverse {
+    color: #3e4555 !important;
+}
+
+@media (min-width: 1024px) {
+	.contact4 .contact-box {
+    padding: 80px 105px 80px 0px;
+	}
+}
+
+@media (max-width: 767px) {
+	.contact4 .contact-box {
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+}
+
+@media (max-width: 1023px) {
+	.contact4 .right-image {
+			position: relative;
+			bottom: -95px;
+	}
+}
+
+

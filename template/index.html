@@ -61,7 +61,7 @@
               <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
-              <li><a href="#">Furniture</a></li>
+              <li><a href="{% url 'furniture' %}">Furniture</a></li>
               <li><a href="#">Grocery</a></li>
             </ul>
           </li>
@@ -123,7 +123,7 @@
           <div class="col-xl-2 col-md-5" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-couch"></i></div>
-              <h4 class="title"><a href="" class="stretched-link">Furniture</a></h4>
+              <h4 class="title"><a href="{% url 'furniture' %}" class="stretched-link">Furniture</a></h4>
             </div>
           </div><!--End Icon Box -->
           <div class="col-xl-3 col-md-5" data-aos="fade-up" data-aos-delay="300">
@@ -164,12 +164,12 @@
 
           <div class="row gy-4 portfolio-container">
 
-            <div class="col-xl-3 col-md-5 portfolio-item filter-app">
+            <div class="col-xl-3 col-md-5 portfolio-item filter-app ">
               <div class="portfolio-wrap">
                 <a href="{% static 'img/1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/1.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Cookware set </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>A must-have for any kitchen enthusiast. crafted for exceptional cooking experiences. With its non-stick coating, durable construction, and stylish design.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -200,7 +200,7 @@
                 <a href="{% static 'img/5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/5.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Bowl set </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>Our bowl set is a stylish and practical addition to your kitchen. Made from high-quality.With their elegant design and various sizes, they offer versatility and functionality for all your dining needs.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -232,7 +232,7 @@
                 <a href="{% static 'img/9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/9.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
                   <h4><a href="portfolio-details.html" title="More Details">Copper Thaali set </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <p>A traditional and exquisite addition to your dining experience. Crafted with pure copper, this set offers both aesthetic beauty and health benefits. With its intricate designs and multiple compartments.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->

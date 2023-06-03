@@ -34,3 +34,6 @@ def send_email(request):
     send_mail(subject, mess, str(request.POST["email_id1"]), recipient_list,fail_silently=False)
     messages.success(request,'The Message Send. Please Wait We Will Get to You in a Short While')
     return redirect("contact" )
+
+def furniture(request):
+    return render(request,"furniture.html")
