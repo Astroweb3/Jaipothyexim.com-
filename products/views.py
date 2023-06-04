@@ -37,3 +37,6 @@ def send_email(request):
 
 def furniture(request):
     return render(request,"furniture.html")
+
+def veg(request):
+    return render(request,"veg.html" )

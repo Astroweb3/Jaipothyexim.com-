@@ -1876,7 +1876,7 @@ section {
 .hero {
   width: 100%;
   position: relative;
-  background: var(--color-primary);
+  background: linear-gradient(to top right, #0099cc 20%, #009999 100%);
   padding: 60px 0 0 0;
 }
 
@@ -1969,9 +1969,9 @@ section {
   padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #4EA1D3;
+  background: linear-gradient(to top right, #33ccff 0%, #0099cc 33%);
   box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
-  transition: all 0.3s ease-in-out;
+  transition: background 2s ease;
   border-radius: 8px;
   z-index: 1;
   height: 100%;
@@ -1997,11 +1997,11 @@ section {
   transition: all 0.3s ease-in-out;
   font-size: 48px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  color: #e2f0F9;
 }
 
 .hero .icon-box:hover {
-  background: #4EA1D3;
+  background: #33ccff;
 }
 
 .hero .icon-box:hover .title a,
