@@ -61,11 +61,12 @@
               <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
-              <li><a href="#">Furniture</a></li>
-              <li><a href="#">Vegitables</a></li>
+              <li><a href="{% url 'furniture' %}">Furniture</a></li>
+              <li><a href="{% url 'veg' %}">Grocery</a></li>
             </ul>
           </li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
+    
         </ul>
        
       </nav><!-- .navbar -->
@@ -93,37 +94,60 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/spa/s1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s1.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Aroma Burner</a></h4>
+              <h4><a href="" title="More Details">Aroma Burner</a></h4>
               <p>A beautiful and practical accessory for creating a soothing ambiance in your space.  it adds a touch of tranquility to any room, allowing you to enjoy the therapeutic benefits of aromatherapy.</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s2.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Spa Mortar </a></h4>
-              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
         <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s4.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/spa/s11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s11.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
-              <p>Exquisite and resonant instruments that bring tranquility and harmony to your space.With their rich tones and calming vibrations, they are perfect for meditation, and creating a peaceful atmosphere. </p>
+              <h4><a href="" title="More Details">Aroma Candles </a></h4>
+              <p>Infused with delightful scents, they fill the air with relaxation and serenity, creating a tranquil atmosphere for pure bliss and rejuvenation.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/spa/s10.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s10.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Massage Equipments</a></h4>
+              <p>Premium Massage Equipment collection includes versatile tools designed to provide optimal comfort and support, enhancing the therapist's techniques and ensuring a blissful and rejuvenating experience for clients.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+
+        <div class="col-xl-3 col-md-5 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/spa/s2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Spa Mortar </a></h4>
+              <p>A versatile tool for creating your own aromatic blends and spa-like experiences at home.With its sturdy construction it offers a seamless and enjoyable process for making custom blends. </p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
         <div class="col-xl-3 col-md-6 portfolio-item filter-books">
           <div class="portfolio-wrap">
+            <a href="{% static 'img/spa/s8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Massaging Stones </a></h4>
+              <p>Massaging Stones offer a natural and effective way to release tension, promote relaxation, and enhance the massage experience for ultimate bliss.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+       
+
+        <div class="col-xl-3 col-md-6 portfolio-item filter-books">
+          <div class="portfolio-wrap">
             <a href="{% static 'img/spa/s3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s3.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Massager </a></h4>
+              <h4><a href="" title="More Details">Massager </a></h4>
               <p>A blissful solution for relaxation and relief from muscle tension. With its ergonomic design and adjustable settings, it targets specific areas of your body to provide soothing massages.</p>
             </div>
           </div>
@@ -133,7 +157,7 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/spa/s5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s5.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Massage Table  </a></h4>
+              <h4><a href="" title="More Details">Massage Table  </a></h4>
               <p>A professional-grade and luxurious platform designed to enhance the massage experience for both therapists and clients.it provides a comfortable and supportive surface for a wide range of bodywork techniques.</p>
             </div>
           </div>
@@ -143,63 +167,47 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/spa/s6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s6.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Oil Warmer </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s7.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Massaging Oils </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Oil Warmer </a></h4>
+              <p> our Oil Warmer enhances any space with its soothing warmth and aromatic ambiance, creating a relaxing environment for indulgent aromatherapy sessions.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
         <div class="col-xl-3 col-md-6 portfolio-item filter-books">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s8.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/spa/s7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s7.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Massaging Stones </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item filter-app">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s9.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Dhara Pot  </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s10.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s10.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Massage Equipments</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Massaging Oils </a></h4>
+              <p>Massaging Oils are expertly blended to provide the ultimate relaxation experience, relieving tension and nourishing the skin with their soothing and rejuvenating properties.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
         <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/spa/s11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s11.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/spa/s4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s4.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Aroma Candles </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Singing Bowls</a></h4>
+              <p>Singing Bowls resonate with soothing and harmonious tones, handcrafted with precision and care, offering a meditative and immersive experience for relaxation, healing, and spiritual practices.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
+        <div class="col-xl-3 col-md-6 portfolio-item filter-product">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/spa/s9.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s9.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Dhara Pot</a></h4>
+              <p> Beautifully crafted essential oil diffuser, brings serenity to any space with its calming mist and soothing LED lights, creating an oasis of tranquility and aromatherapy bliss.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
 
+    
+        
+        
+        
       </div><!-- End Portfolio Container -->
 
     </div>

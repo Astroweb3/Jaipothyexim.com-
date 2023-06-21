@@ -61,12 +61,12 @@
               <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
-              <li><a href="#">Furniture</a></li>
-              <li><a href="#">Vegitables</a></li>
+              <li><a href="{% url 'furniture' %}">Furniture</a></li>
+              <li><a href="{% url 'veg' %}">Grocery</a></li>
             </ul>
           </li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
-
+    
         </ul>
        
       </nav><!-- .navbar -->
@@ -92,7 +92,7 @@
       <div class="row gy-4">
         <div class="col-lg-6">
           <h3></h3>
-          <img src="{% static 'img/about.jpg'%}" class="img-fluid rounded-4 mb-4" alt="">
+          <img src="{% static 'img/team.gif'%}" class="img-fluid rounded-4 mb-4" alt="">
 
         </div>
         <div class="col-lg-6">
@@ -109,7 +109,7 @@
             </p>
 
             <div class="position-relative mt-4">
-              <img src="{% static 'img/about-2.jpg' %}" class="img-fluid rounded-4" alt="">
+              <img src="{% static 'img/grow.jpg' %}" class="img-fluid rounded-4" alt="">
               <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox play-btn"></a>
             </div>
           </div>
@@ -126,14 +126,13 @@
         </div>
         <div class="clients-slider swiper">
           <div class="swiper-wrapper align-items-center">
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-1.png'%}%" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-2.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-3.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-4.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-5.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-6.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-7.png'%}" class="img-fluid" alt=""></div>
-            <div class="swiper-slide"><img src="{% static 'img/clients/client-8.png'%}" class="img-fluid" alt=""></div>
+        
+            <div class="swiper-slide"><img src="{% static 'img/clients/2.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/3.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/4.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/5.png'%}" class="img-fluid" alt=""></div>
+            <div class="swiper-slide"><img src="{% static 'img/clients/1.png'%}" class="img-fluid" alt=""></div>
+      
           </div>
         </div>
 
@@ -147,7 +146,7 @@
         <div class="row gy-4 align-items-center">
 
           <div class="col-lg-6">
-            <img src="{% static 'img/stats-img.svg'%}" alt="" class="img-fluid">
+            <img src="{% static 'img/del.jpg'%}" alt="" class="img-fluid">
           </div>
 
           <div class="col-lg-6">
@@ -166,15 +165,6 @@
       </div>
     </section><!-- End Stats Counter Section -->
 
-    <!-- ======= Call To Action Section ======= -->
-    <section id="call-to-action" class="call-to-action">
-      <div class="container text-center" data-aos="zoom-out">
-        <a href="" class="glightbox play-btn"></a>
-        <h3>Call To Action</h3>
-        <p> </p>
-        <a class="cta-btn" href="#">Call To Action</a>
-      </div>
-    </section><!-- End Call To Action Section -->
 
 </main><!-- End #main -->
 
@@ -188,12 +178,7 @@
               <span>JAIPOTHYEXIM</span>
             </a>
             <p>Innovative solutions for every room in your home and beyond.</p>
-            <div class="social-links d-flex mt-4">
-              <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-              <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-            </div>
+       
           </div>
     
           <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">

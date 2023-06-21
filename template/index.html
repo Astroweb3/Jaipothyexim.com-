@@ -147,7 +147,7 @@
 
         <div class="section-header">
           <h2>Best Sellers</h2>
-          <p>Transform Your Life, One Space at a Time!</p>
+         
         </div>
 
         <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
@@ -168,7 +168,7 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/1.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Cookware set </a></h4>
+                  <h4><a href="{% url 'kitchen' %}" title="More Details">Cookware set </a></h4>
                   <p>A must-have for any kitchen enthusiast. crafted for exceptional cooking experiences. With its non-stick coating, durable construction, and stylish design.</p>
                 </div>
               </div>
@@ -178,8 +178,8 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/eng/e1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e1.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Drilling Machine </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="{% url 'engeneering' %}" title="More Details">Drilling Machine </a></h4>
+                  <p>Our robust Drilling Machine offers precision and power for a variety of drilling tasks, making it a reliable and efficient tool for both professionals and DIY enthusiasts.r</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -188,18 +188,27 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/spa/s11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s11.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Aroma Candles </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="{% url 'spa' %}" title="More Details">Aroma Candles </a></h4>
+                  <p>Infused with delightful scents, they fill the air with relaxation and serenity, creating a tranquil atmosphere for pure bliss and rejuvenation.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
 
+            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/spa/s4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s4.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="{% url 'spa' %}" title="More Details">Singing Bowls</a></h4>
+                  <p>Singing Bowls resonate with soothing and harmonious tones, handcrafted with precision and care, offering a meditative and immersive experience for relaxation, healing, and spiritual practices.</p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
 
             <div class="col-xl-3 col-md-6 portfolio-item filter-app">
               <div class="portfolio-wrap">
                 <a href="{% static 'img/5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/5.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Bowl set </a></h4>
+                  <h4><a href="{% url 'kitchen' %}" title="More Details">Bowl set </a></h4>
                   <p>Our bowl set is a stylish and practical addition to your kitchen. Made from high-quality.With their elegant design and various sizes, they offer versatility and functionality for all your dining needs.</p>
                 </div>
               </div>
@@ -209,8 +218,8 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/eng/e5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e5.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Solar Cycle Light  </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="{% url 'engeneering' %}" title="More Details">Solar Cycle Light  </a></h4>
+                  <p>The Solar Cycle Light harnesses solar energy to power its bright LED lights, providing eco-friendly and convenient illumination for safe and enjoyable cycling adventures.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -219,8 +228,8 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/spa/s7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s7.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Massaging Oils </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="{% url 'spa' %}" title="More Details">Massaging Oils </a></h4>
+                  <p>Massaging Oils are expertly blended to provide the ultimate relaxation experience, relieving tension and nourishing the skin with their soothing and rejuvenating properties.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
@@ -231,7 +240,7 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/9.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/9.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Copper Thaali set </a></h4>
+                  <h4><a href="{% url 'kitchen' %}" title="More Details">Copper Thaali set </a></h4>
                   <p>A traditional and exquisite addition to your dining experience. Crafted with pure copper, this set offers both aesthetic beauty and health benefits. With its intricate designs and multiple compartments.</p>
                 </div>
               </div>
@@ -241,21 +250,62 @@
               <div class="portfolio-wrap">
                 <a href="{% static 'img/eng/e18.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/eng/e18.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Wood Planer Machine </a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="{% url 'engeneering' %}" title="More Details">Wood Planer Machine </a></h4>
+                  <p>Smooth surface finishing, featuring adjustable cutting depths and sturdy construction for leveling of wood materials.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item --> 
 
-            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+            
+
+          
+
+          </div><!-- End Portfolio Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+
+
+     <!-- ======= Portfolio Section ======= -->
+     <section id="portfolio" class="portfolio sections-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Eco Products</h2>
+         
+        </div>
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
+
+
+          <div class="row gy-4 portfolio-container">
+            <div class="col-xl-3 col-md-6 portfolio-item filter-product">
               <div class="portfolio-wrap">
-                <a href="{% static 'img/spa/s4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/spa/s4.jpg'%}" class="img-fluid" alt=""></a>
+                <a href="{% static 'img/veg/v6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/veg/v6.jpg'%}" class="img-fluid" alt=""></a>
                 <div class="portfolio-info">
-                  <h4><a href="portfolio-details.html" title="More Details">Singing Bowls</a></h4>
-                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <h4><a href="" title="More Details">Coir Pith Blocks </a></h4>
+                  <p>Our Coir Pith Blocks serve as a versatile and eco-friendly substrate for plants, providing optimal moisture retention and aeration.</p>
                 </div>
               </div>
             </div><!-- End Portfolio Item -->
+    
+            <div class="col-xl-3 col-md-6 portfolio-item filter-branding">
+              <div class="portfolio-wrap">
+                <a href="{% static 'img/veg/v3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/veg/v3.jpg'%}" class="img-fluid" alt=""></a>
+                <div class="portfolio-info">
+                  <h4><a href="" title="More Details">Cow Dung</a></h4>
+                  <p>Embrace eco-friendly gardening practices with our cow dung, a renewable and sustainable resource for nurturing vibrant gardens. </p>
+                </div>
+              </div>
+            </div><!-- End Portfolio Item -->
+    
+           
+
+            
 
           
 

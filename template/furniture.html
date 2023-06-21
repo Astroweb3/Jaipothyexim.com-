@@ -62,10 +62,11 @@
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
               <li><a href="{% url 'furniture' %}">Furniture</a></li>
-              <li><a href="#">Vegitables</a></li>
+              <li><a href="{% url 'veg' %}">Grocery</a></li>
             </ul>
           </li>
           <li><a href="{% url 'contact' %}">Contact</a></li>
+    
         </ul>
        
       </nav><!-- .navbar -->
@@ -81,8 +82,8 @@
   <div class="container" data-aos="fade-up">
 
     <div class="section-header">
-      <h2>Spa Products</h2>
-      <p>Indulge in Pure Bliss, Nurture Your Inner Glow</p>
+      <h2>Furniture Products</h2>
+      <p>Comfort Redefined, Furniture Perfected</p>
     </div>
 
     <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order" data-aos="fade-up" data-aos-delay="100">
@@ -101,8 +102,8 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba1.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Fancy Economic Towels</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Fancy Economic Towels</a></h4>
+              <p>Indulge in the luxurious softness of our Fancy Economic Towels, crafted with premium materials for a delightful and cost-effective bathing experience.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -111,18 +112,26 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba2.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Classy Premium Quality </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur </p>
+              <h4><a href="" title="More Details">Classy Premium Quality </a></h4>
+              <p>The epitome of elegance and excellence with our Classy Premium Quality products, meticulously crafted to exceed your expectations and elevate your lifestyle. </p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
-
+        <div class="col-xl-3 col-md-6 portfolio-item bath">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/ba8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Swimming Pool Towels</a></h4>
+              <p>Our Swimming Pool Towels combine absorbency and durability, ensuring quick drying and ultimate comfort for a refreshing and enjoyable poolside experience.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
         <div class="col-xl-3 col-md-6 portfolio-item bath">
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba3.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Classy Luxury Quality</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur </p>
+              <h4><a href="" title="More Details">Classy Luxury Quality</a></h4>
+              <p>The epitome of opulence with our Classy Luxury Quality Towels, It provide unrivaled softness, absorbency, and durability for a lavish bathing experience. </p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -131,8 +140,8 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba4.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Spa / Saloon Towels </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Spa / Saloon Towels </a></h4>
+              <p>luxury with our Spa/Salon Towels, crafted from plush and absorbent materials, offering a soft and comforting touch for a blissful spa or salon experience.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -141,8 +150,8 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba5.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bath Robe  </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Bath Robe  </a></h4>
+              <p>Wrap yourself in pure comfort and luxury with our Bath Robes, crafted with plush fabrics, a perfect blend of style and coziness for ultimate relaxation.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -151,28 +160,20 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba6.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bath Room Slippers </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Bath Room Slippers </a></h4>
+              <p>Bath Room Slippers, designed for a cozy and slip-resistant fit, providing a luxurious and relaxing feel for your feet after a refreshing bath.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
+
+        
 
         <div class="col-xl-3 col-md-6 portfolio-item bath">
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/ba7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba7.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Swimming Pool Towels</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bath">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/ba8.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/ba8.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Shower Curtains </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Shower Curtains </a></h4>
+              <p>Shower Curtains combine functionality and style,attractive designs to enhance your bathroom décor while keeping your shower area clean and dry.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -181,88 +182,8 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/be1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be1.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bed Sheet</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-5 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be2.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Duvet Cover</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur </p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be3.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Duvet</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur </p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be4.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Pillow</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be5.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Pillow Cover / Pillow Protector </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be6.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bed Spread</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be7.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Blankets </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be9.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be9.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Mattress Protector </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item bed">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be8.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be8.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bed Runner</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Bed Sheet</a></h4>
+              <p>Indulge in luxury and comfort with our Bed Sheets, offering a silky-smooth touch and exceptional breathability for a restful night's sleep.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -271,118 +192,105 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/be10.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be10.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Mattress Topper</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Mattress Topper</a></h4>
+              <p>Enhance the comfort of your mattress with our Mattress Topper, designed to provide an extra layer of cushioning and support for a rejuvenating and cozy sleep experience.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item bed">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Duvet Cover</a></h4>
+              <p>ransform your bedroom with our Duvet Cover, offering a stylish and protective layer for your duvet while adding a touch of elegance to your décor.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
         <div class="col-xl-3 col-md-6 portfolio-item bed">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/be11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be11.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/fur/be3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be3.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Bed Bug Protector </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Duvet</a></h4>
+              <p>Ultimate coziness and warmth with our Duvet, filled with premium materials, providing exceptional insulation and comfort for a luxurious and restful sleep.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
-        <div class="col-xl-3 col-md-5 portfolio-item mattress">
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/m2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m2.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/fur/be4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be4.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Spring Mattress</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Pillow</a></h4>
+              <p>Drift into blissful slumber with our Pillow,offering optimal support and comfort for a rejuvenating and restorative sleep experience.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
-        <div class="col-xl-3 col-md-5 portfolio-item mattress">
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/m1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m1.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/fur/be5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be5.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Foam with Coir Mattress </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Pillow Cover/Pillow Protector </a></h4>
+              <p>Protect and enhance the lifespan of your pillow with our Pillow Cover,ensuring comfort, and durability.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
-        <div class="col-xl-3 col-md-6 portfolio-item mattress">
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
           <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/m3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m3.jpg'%}" class="img-fluid" alt=""></a>
+            <a href="{% static 'img/fur/be6.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be6.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Extra / Foldable / Travel Beds </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Bed Spread</a></h4>
+              <p>Add a touch of elegance to your bedroom with our Bed Spread, crafted from luxurious materials, offering style, warmth, and comfort for a cozy and inviting sleep space.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-5 portfolio-item soft">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/sl4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl4.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Curtains</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-5 portfolio-item soft">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/sl5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl5.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Sofa Cover </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item soft">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/sl1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl1.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Cushion</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur </p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item soft">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/sl3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl3.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Laundry Bag </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-6 portfolio-item soft">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/sl2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl2.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Cushion Cover </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
-        <div class="col-xl-3 col-md-5 portfolio-item fb">
-          <div class="portfolio-wrap">
-            <a href="{% static 'img/fur/fb1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb1.jpg'%}" class="img-fluid" alt=""></a>
-            <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Chair Cover With Bow</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
-            </div>
-          </div>
-        </div><!-- End Portfolio Item -->
-
         <div class="col-xl-3 col-md-5 portfolio-item fb">
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/fb2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb2.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Table Cloth With Frill </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Table Cloth With Frill </a></h4>
+              <p>Elevate your dining experience with our Table Cloth With Frill, combining elegance and charm with its decorative frill design, perfect for adding a sophistication touch to any table</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be7.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be7.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Blankets </a></h4>
+              <p>Embrace warmth and snuggle up in our cozy Blankets, crafted with soft materials, providing comfort and relaxation during chilly nights or cozy moments.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be11.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be11.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Bed Bug Protector </a></h4>
+              <p>Protect your mattress from bed bugs with our reliable Bed Bug Protector, offering a secure barrier against infestations for a peaceful and hygienic sleep environment. </p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be9.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be9.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Mattress Protector </a></h4>
+              <p>Extend the life of your mattress with our Mattress Protector, providing a barrier against spills, stains, and allergens for a fresh and comfortable sleep surface.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item bed">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/be8.jpg'%}%" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/be8.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Bed Runner</a></h4>
+              <p>Enhance the aesthetics of your bed with our Bed Runner, featuring stylish designs, adding a touch of elegance and sophistication to your bedroom décor.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
@@ -391,21 +299,122 @@
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/fb3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb3.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Table Runner</a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur</p>
+              <h4><a href="" title="More Details">Table Runner</a></h4>
+              <p>Add a stylish and decorative touch to your table setting with our Table Runner, crafted with captivating designs, creating a visually appealing dining ambiance.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
 
+
+       
+
+        
+
+        <div class="col-xl-3 col-md-5 portfolio-item mattress">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Spring Mattress</a></h4>
+              <p>Experience unparalleled comfort and support with our Spring Mattress, designed to provide optimal spinal alignment and pressure relief for a restful and rejuvenating sleep experience.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item mattress">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Foam with Coir Mattress </a></h4>
+              <p>perfect blend of comfort and support with our Foam with Coir Mattress, combining the plushness of foam and the natural resilience of coir for a blissful night's sleep.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
         <div class="col-xl-3 col-md-6 portfolio-item fb">
           <div class="portfolio-wrap">
             <a href="{% static 'img/fur/fb4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb4.jpg'%}" class="img-fluid" alt=""></a>
             <div class="portfolio-info">
-              <h4><a href="portfolio-details.html" title="More Details">Napkins </a></h4>
-              <p>Lorem ipsum, dolor sit amet consectetur.</p>
+              <h4><a href="" title="More Details">Napkins </a></h4>
+              <p>Complete your table setting with our Napkins, made from high-quality fabrics, offering softness and absorbency while adding a touch of refinement to your dining experience.</p>
             </div>
           </div>
         </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item soft">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Cushion</a></h4>
+              <p>Comfort and style to your seating with our Cushions, crafted from plush materials, providing extra support and a decorative touch to enhance any space in your home.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item mattress">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/m3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/m3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Extra / Foldable / Travel Beds </a></h4>
+              <p>Our Extra/Foldable/Travel Beds offer convenience and comfort on the go, providing easy-to-store solution for a comfortable sleep wherever you are.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item soft">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl4.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl4.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Curtains</a></h4>
+              <p>Add a touch of style and privacy to your space with our Curtains, crafted from high-quality fabrics and available in various designs to complement your décor and control light effortlessly.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item soft">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl2.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl2.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Cushion Cover </a></h4>
+              <p>Refresh the look of your cushions with our Cushion Covers, featuring a range of designs and high-quality materials to effortlessly elevate your home décor and add a touch of personality.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-5 portfolio-item soft">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl5.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl5.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Sofa Cover </a></h4>
+              <p>Protect and revitalize your sofa with our Sofa Cover, made from durable and stretchable materials, offering a snug fit and safeguarding against stains, spills, and wear for long-lasting beauty.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-xl-3 col-md-6 portfolio-item soft">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/sl3.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/sl3.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Laundry Bag </a></h4>
+              <p>Simplify your laundry routine with our Laundry Bag, designed with durable materials and a convenient drawstring closure, making sorting and transporting your laundry a breeze.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        
+
+        <div class="col-xl-3 col-md-5 portfolio-item fb">
+          <div class="portfolio-wrap">
+            <a href="{% static 'img/fur/fb1.jpg'%}" data-gallery="portfolio-gallery-app" class="glightbox"><img src="{% static 'img/fur/fb1.jpg'%}" class="img-fluid" alt=""></a>
+            <div class="portfolio-info">
+              <h4><a href="" title="More Details">Chair Cover With Bow</a></h4>
+              <p>the elegance of your chairs with our Chair Cover With Bow, featuring a stylish bow accent, transforming ordinary chairs into sophisticated and charming seating options for any occasion.</p>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        
+        
+        
 
       </div><!-- End Portfolio Container -->
 
