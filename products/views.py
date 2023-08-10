@@ -29,7 +29,7 @@ def send_email(request):
     email = str(request.POST["email_id1"])
     mmsg = str(request.POST["msg"])
     mess = f"Name: {name}\nEmail: {email}\n\nMessage: {mmsg}"
-    recipient_list = ['Jaipothyexim@gmail.com'] # List of recipient email addresses
+    recipient_list = ['kirankumarr1901@gmail.com'] # List of recipient email addresses
     
     send_mail(subject, mess, str(request.POST["email_id1"]), recipient_list,fail_silently=False)
     messages.success(request,'The Message Send. Please Wait We Will Get to You in a Short While')

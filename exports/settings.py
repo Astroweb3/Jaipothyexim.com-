@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-te1_2!&pmq#md-xwm3+n10yx3(ggfvg#yti%4k1ig=p4mk311y"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -125,20 +125,9 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
 # settings.py
 
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = 587
-EMAIL_HOST_USER = 'Jaipothyexim@gmail.com'  # Your email address
-EMAIL_HOST_PASSWORD = 'popnkvkvpluhxzlk'  # Your email password
-EMAIL_USE_TLS = True
-DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
-# settings.py
-
-ADMINS = [
-    ('Jaipothy', 'Jaipothyexim@gmail.com'),
-]
-
-MANAGERS = ADMINS
-
-EMAIL_SUBJECT_PREFIX = '[Django Mail] '  # Optional prefix for email subjects
+EMAIL_BACKEND = 'django_ses.SESBackend'
+AWS_SES_REGION_NAME = 'ap-south-1' # replace with your region
+AWS_ACCESS_KEY_ID = 'AKIAQ3SYPH5QA5G2FSTF'
+AWS_SECRET_ACCESS_KEY = 'Hiu5crSTVMho57bINKQGzYvAW72lWkwJgqK3/OTo'
+AWS_SES_REGION_ENDPOINT = 'email.ap-south-1.amazonaws.com'
