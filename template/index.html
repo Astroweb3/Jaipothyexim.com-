@@ -61,7 +61,7 @@
               <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
-              <li><a href="{% url 'furniture' %}">Furniture</a></li>
+              <li><a href="{% url 'furniture' %}">Bed & Bath Line</a></li>
               <li><a href="{% url 'veg' %}">Grocery</a></li>
             </ul>
           </li>
@@ -86,8 +86,8 @@
           <h2>Welcome to <span>JAIPOTHYEXIM</span></h2>
           <p><strong>Innovative solutions for every room in your home and beyond.</strong></p>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="{% url 'aboutus' %}" class="btn-get-started">Get Started</a>
-            <a href="https://youtu.be/aS6E8bzFUbM" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <a href="{% url 'aboutus' %}" class="btn-get-started">View Profile</a>
+            <!--<a href="https://youtu.be/aS6E8bzFUbM" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
           </div>
         </div>
         <div class="col-lg-6 order-1 order-lg-2">
@@ -123,7 +123,7 @@
           <div class="col-xl-2 col-md-5" data-aos="fade-up" data-aos-delay="300">
             <div class="icon-box">
               <div class="icon"><i class="fas fa-couch"></i></div>
-              <h4 class="title"><a href="{% url 'furniture' %}" class="stretched-link">Furniture</a></h4>
+              <h4 class="title"><a href="{% url 'furniture' %}" class="stretched-link">Bed & Bath Line</a></h4>
             </div>
           </div><!--End Icon Box -->
           <div class="col-xl-3 col-md-5" data-aos="fade-up" data-aos-delay="300">
@@ -324,9 +324,10 @@
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
             <span>JAIPOTHYEXIM</span>
+            <img src="{% static 'img/logo.png'%}" class="img-fluid" alt="">
           </a>
           <p>Innovative solutions for every room in your home and beyond.</p>
-          <img src="{% static 'img/logo2.png'%}" class="img-fluid" alt="">
+          
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">

@@ -34,7 +34,7 @@ def send_email(request):
     
     send_mail(subject, mess, 'kirankumarr1901@gmail.com',recipient_list, fail_silently=False)
     messages.success(request,'The Message Send. Please Wait We Will Get to You in a Short While')
-    return redirect("contact" )
+    return render(request,'contact')
 
 def furniture(request):
     return render(request,"furniture.html")

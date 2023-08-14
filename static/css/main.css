@@ -1836,21 +1836,21 @@ section {
 
 .hero .btn-get-started {
   font-family: var(--font-primary);
-  font-weight: 500;
-  font-size: 15px;
-  letter-spacing: 1px;
+  font-weight: 550;
+  font-size: 18px;
+  letter-spacing: 2px;
   display: inline-block;
-  padding: 14px 40px;
-  border-radius: 50px;
+  padding: 16px 50px;
+  border-radius: 12px;
   transition: 0.3s;
   color: #fcfcfc;
-  background: rgba(255, 255, 255, 0.1);
-  box-shadow: 0 0 15px rgba(41, 41, 41, 0.08);
-  border: 2px solid rgba(0, 0, 0, 0.1);
+  background: rgba(251, 251, 251, 0.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .hero .btn-get-started:hover {
-  border-color: #f85a40;
+  border-color: #ffffff;
 }
 
 .hero .btn-watch-video {
@@ -1862,7 +1862,7 @@ section {
 }
 
 .hero .btn-watch-video i {
-  color: #f85a40;
+  color: #7fe6f4;
   font-size: 32px;
   transition: 0.3s;
   line-height: 0;
@@ -1870,7 +1870,7 @@ section {
 }
 
 .hero .btn-watch-video:hover i {
-  color: #f85a40;
+  color: #91c7eb;
 }
 
 @media (max-width: 640px) {
@@ -1880,7 +1880,7 @@ section {
 
   .hero .btn-get-started,
   .hero .btn-watch-video {
-    font-size: 14px;
+    font-size: 18px;
   }
 }
 

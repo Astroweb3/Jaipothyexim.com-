@@ -61,7 +61,7 @@
               <li><a href="{% url 'kitchen' %}">Kitchen Products</a></li>
               <li><a href="{% url 'engeneering' %}">Engineering Items</a></li>
               <li><a href="{% url 'spa' %}">SPA Products</a></li>
-              <li><a href="{% url 'furniture' %}">Furniture</a></li>
+              <li><a href="{% url 'furniture' %}">Bed & Bath Line</a></li>
               <li><a href="{% url 'veg' %}">Grocery</a></li>
             </ul>
           </li>
@@ -111,10 +111,6 @@
               <textarea class="form-control" name="msg" rows="7" id = "msg" placeholder="Message" required></textarea>
             </div>
             
-              <div class="loading"></div>
-              <div class="error-message"></div>
-              <div class="sent-message"></div>
-
             <div class="text-center"><button type="submit">Send Message</button></div>
             
           </form>
@@ -133,9 +129,10 @@
         <div class="col-lg-5 col-md-12 footer-info">
           <a href="index.html" class="logo d-flex align-items-center">
             <span>JAIPOTHYEXIM</span>
+            <img src="{% static 'img/logo.png'%}" class="img-fluid" alt="">
           </a>
           <p>Innovative solutions for every room in your home and beyond.</p>
-          <img src="{% static 'img/logo2.png'%}" class="img-fluid" alt="">
+          
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
